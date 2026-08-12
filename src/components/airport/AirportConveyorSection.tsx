@@ -100,7 +100,7 @@ export function AirportConveyorSection() {
       
       {/* Typography Header */}
       <div className="container mx-auto px-6 mb-24 text-center">
-        <h2 className="text-6xl md:text-7xl font-serif font-light tracking-tight text-[#49344F]">
+        <h2 className="text-4xl md:text-7xl font-serif font-light tracking-tight text-[#49344F]">
           Choose your <i className="italic text-[#FFD9C2]">memory.</i>
         </h2>
         <p className="font-sans font-light text-[#49344F]/70 mt-6 tracking-wide text-lg">

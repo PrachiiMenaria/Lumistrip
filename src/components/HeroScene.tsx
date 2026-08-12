@@ -36,7 +36,7 @@ function LensSweep() {
 export default function HeroScene() {
   return (
     <div className="w-full h-screen absolute top-0 left-0 z-0 bg-transparent pointer-events-none">
-      <Canvas shadows camera={{ position: [0, 2, 14], fov: 45 }} className="pointer-events-auto">
+      <Canvas shadows camera={{ position: [0, 2, 14], fov: 45 }} className="pointer-events-auto" style={{ touchAction: 'pan-y' }}>
         {/* <SoftShadows size={10} samples={8} focus={0.5} /> */}
         
         {/* Cinematic Lighting Setup */}

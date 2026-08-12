@@ -50,7 +50,7 @@ export default function OverlayUI() {
       </div>
 
       {/* Header */}
-      <header className="p-8 md:p-12 flex justify-between items-start pointer-events-auto z-20">
+      <header className="p-4 md:p-12 flex justify-between items-start pointer-events-auto z-20">
         <div className="flex flex-col" data-cursor="camera">
           <span className="text-3xl font-serif font-semibold tracking-tight text-[#49344F]">LumiStrip</span>
           <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-[#49344F]/60 mt-2">
@@ -58,7 +58,7 @@ export default function OverlayUI() {
           </span>
         </div>
         
-        <nav className="flex gap-12 items-center text-xs font-sans uppercase tracking-[0.2em] font-medium text-[#49344F]">
+        <nav className="flex gap-4 md:gap-12 items-center text-xs font-sans uppercase tracking-[0.2em] font-medium text-[#49344F]">
           {["Story", "Gallery"].map((item) => (
             <a 
               key={item} 
@@ -80,9 +80,9 @@ export default function OverlayUI() {
       </header>
 
       {/* Floating editorial texts */}
-      <div className="editorial-text absolute top-[35%] left-12 md:left-24 max-w-[350px] pointer-events-auto z-20" data-cursor="stickers">
+      <div className="editorial-text absolute top-[35%] left-6 md:left-24 max-w-[350px] pointer-events-auto z-20" data-cursor="stickers">
         <p className="text-[10px] font-sans font-semibold uppercase tracking-[0.4em] mb-4 text-[#49344F]/50">01 / The Concept</p>
-        <h2 className="text-5xl md:text-6xl font-serif font-light mb-6 leading-[1.1] text-[#49344F] tracking-tight">
+        <h2 className="text-4xl md:text-6xl font-serif font-light mb-6 leading-[1.1] text-[#49344F] tracking-tight">
           Capture the <br/><span className="font-sans font-medium text-[#FFD9C2] bg-[#49344F] px-2 -ml-2 rounded-sm rotate-1 inline-block">fleeting</span> moments.
         </h2>
         <p className="text-sm leading-relaxed font-sans text-[#49344F]/80 font-light max-w-[280px]">
@@ -90,7 +90,7 @@ export default function OverlayUI() {
         </p>
       </div>
 
-      <div className="editorial-text absolute bottom-32 right-12 md:right-24 max-w-[200px] text-right pointer-events-auto z-20">
+      <div className="editorial-text absolute bottom-24 md:bottom-32 right-6 md:right-24 max-w-[200px] text-right pointer-events-auto z-20">
         <div className="rotate-90 origin-right translate-x-full">
           <p className="text-[10px] font-sans font-bold uppercase tracking-[0.5em] text-[#49344F]/40 whitespace-nowrap">
             Limited Edition / 2026
