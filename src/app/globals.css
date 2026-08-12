@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #FFE7F1;
+  --color-butter: #FFF4C8;
+  --color-lavender: #DCCEFF;
+  --color-baby: #DDF6FF;
+  --color-peach: #FFD9C2;
+  --color-mint: #D8F7E4;
+  --color-cream: #FFF8F2;
+  --color-plum: #49344F;
+}
+
+@layer base {
+  :root {
+    --background: #FFF8F2;
+    --foreground: #49344F;
+  }
+
+  body {
+    background: radial-gradient(circle at 20% 30%, var(--color-blush) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, var(--color-baby) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, var(--color-butter) 0%, transparent 60%),
+                var(--background);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--foreground);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  cursor: none; /* We are using a custom cursor */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::selection {
+  background-color: #b09de6;
+  color: white;
+}
+
+
+/* Subtle Vignette & Soft Paper Lighting */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  /* Soft warm vignette on the edges */
+  background: radial-gradient(circle at center, transparent 40%, rgba(200, 160, 120, 0.15) 100%);
+}
+
+/* Smooth scrolling for Lenis */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
