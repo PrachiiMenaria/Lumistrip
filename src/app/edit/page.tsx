@@ -168,7 +168,7 @@ export default function EditingStudio() {
   if (!isLoaded) return null;
 
   return (
-    <main className="relative w-full h-screen flex flex-col md:flex-row overflow-hidden bg-[#FFF8F2]">
+    <main className="relative w-full h-[100dvh] flex flex-col md:flex-row overflow-hidden bg-[#FFF8F2]">
       
       {/* LEFT: CANVAS AREA (70%) */}
       <section className="relative flex-1 h-full flex items-center justify-center p-4 md:p-8 overflow-y-auto z-10 transition-colors duration-500">

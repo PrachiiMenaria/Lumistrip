@@ -473,7 +473,7 @@ export default function StylesPage() {
   };
 
   return (
-    <main className="w-full h-screen flex flex-col md:flex-row overflow-hidden bg-[#1E1E1E]">
+    <main className="w-full h-[100dvh] flex flex-col md:flex-row overflow-hidden bg-[#1E1E1E]">
       
       {/* LEFT: CANVAS AREA */}
       <div 
@@ -514,7 +514,7 @@ export default function StylesPage() {
       </div>
 
       {/* RIGHT: EDITING TOOLS */}
-      <section className="relative w-full md:w-[420px] flex-1 md:flex-none md:h-full bg-[#121212] border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] flex flex-col z-20 text-white overflow-hidden">
+      <section className={`relative w-full md:w-[420px] flex-1 md:flex-none md:h-full bg-[#121212] border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] flex-col z-20 text-white overflow-hidden ${photos.length > 0 ? 'flex' : 'hidden md:flex'}`}>
         <div className="p-4 md:p-8 pb-4 shrink-0 flex justify-between items-start">
           <div>
             <h1 className="font-serif italic text-3xl tracking-tight">Memory Styles</h1>
