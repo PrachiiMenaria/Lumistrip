@@ -131,7 +131,7 @@ export default function FramesPage() {
   };
 
   return (
-    <main className="w-full h-screen flex flex-col md:flex-row overflow-hidden bg-[#FFF8F2]">
+    <main className="w-full h-[100dvh] flex flex-col md:flex-row overflow-hidden bg-[#FFF8F2]">
       
       {/* LEFT: CANVAS AREA */}
       <div 
@@ -182,8 +182,8 @@ export default function FramesPage() {
       </div>
 
       {/* RIGHT: EDITING TOOLS */}
-      <section className="w-full md:w-[400px] shrink-0 h-full bg-white/80 backdrop-blur-xl border-l border-white/20 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] flex flex-col z-20">
-        <div className="p-8 pb-4 shrink-0 flex justify-between items-start">
+      <section className={`relative w-full md:w-[400px] flex-1 md:flex-none md:h-full bg-white/80 backdrop-blur-xl border-l border-white/20 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] flex-col z-20 overflow-hidden ${photos.length > 0 ? 'flex' : 'hidden md:flex'}`}>
+        <div className="p-4 md:p-8 pb-4 shrink-0 flex justify-between items-start">
           <div>
             <h1 className="font-serif italic text-3xl text-[#49344F] tracking-tight">Frame Studio</h1>
             <p className="font-sans text-xs uppercase tracking-widest text-[#49344F]/50 mt-2">Borders & Layouts</p>
