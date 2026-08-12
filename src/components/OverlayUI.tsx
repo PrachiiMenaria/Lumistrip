@@ -64,14 +64,14 @@ export default function OverlayUI() {
               key={item} 
               href="#" 
               data-cursor="link"
-              className="hover-target relative overflow-hidden group py-1"
+              className="hover-target relative overflow-hidden group flex items-center h-6"
               onMouseEnter={playHover}
               onClick={playClick}
             >
               <span className="inline-block transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:-translate-y-full">
                 {item}
               </span>
-              <span className="absolute top-0 left-0 inline-block transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] translate-y-full group-hover:translate-y-0 text-[#B77466]">
+              <span className="absolute top-0 left-0 h-full flex items-center inline-block transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] translate-y-full group-hover:translate-y-0 text-[#B77466]">
                 {item}
               </span>
             </a>
@@ -80,7 +80,7 @@ export default function OverlayUI() {
       </header>
 
       {/* Floating editorial texts */}
-      <div className="editorial-text absolute top-[35%] left-6 md:left-24 max-w-[350px] pointer-events-auto z-20" data-cursor="stickers">
+      <div className="editorial-text absolute top-[15%] md:top-[35%] left-6 md:left-24 max-w-[350px] pointer-events-auto z-20" data-cursor="stickers">
         <p className="text-[10px] font-sans font-semibold uppercase tracking-[0.4em] mb-4 text-[#49344F]/50">01 / The Concept</p>
         <h2 className="text-4xl md:text-6xl font-serif font-light mb-6 leading-[1.1] text-[#49344F] tracking-tight">
           Capture the <br/><span className="font-sans font-medium text-[#FFD9C2] bg-[#49344F] px-2 -ml-2 rounded-sm rotate-1 inline-block">fleeting</span> moments.

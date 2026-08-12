@@ -199,9 +199,9 @@ export default function EditingStudio() {
         </motion.div>
       </section>
 
-      {/* RIGHT: EDITING TOOLS (30%) */}
-      <section className="relative w-full md:w-[400px] h-full bg-white/80 backdrop-blur-xl border-l border-white/20 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] flex flex-col z-20">
-        <div className="p-8 pb-4 shrink-0">
+      {/* RIGHT: EDITING TOOLS */}
+      <section className="relative w-full md:w-[400px] flex-1 md:flex-none md:h-full bg-white/80 backdrop-blur-xl border-l border-white/20 shadow-[-10px_0_30px_rgba(0,0,0,0.05)] flex flex-col z-20 overflow-hidden">
+        <div className="p-4 md:p-8 pb-4 shrink-0">
           <h1 className="font-serif italic text-3xl text-[#49344F] tracking-tight">Editing Studio</h1>
           <p className="font-sans text-xs uppercase tracking-widest text-[#49344F]/50 mt-2">Decorate your memories</p>
         </div>

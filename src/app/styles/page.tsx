@@ -514,8 +514,8 @@ export default function StylesPage() {
       </div>
 
       {/* RIGHT: EDITING TOOLS */}
-      <section className="w-full md:w-[420px] shrink-0 h-full bg-[#121212] border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] flex flex-col z-20 text-white">
-        <div className="p-8 pb-4 shrink-0 flex justify-between items-start">
+      <section className="relative w-full md:w-[420px] flex-1 md:flex-none md:h-full bg-[#121212] border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)] flex flex-col z-20 text-white overflow-hidden">
+        <div className="p-4 md:p-8 pb-4 shrink-0 flex justify-between items-start">
           <div>
             <h1 className="font-serif italic text-3xl tracking-tight">Memory Styles</h1>
             <p className="font-sans text-xs uppercase tracking-widest text-white/50 mt-2">Aesthetic Wrappers</p>
